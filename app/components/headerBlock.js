@@ -19,14 +19,14 @@ export const HeaderBlock = (props) => {
             }
                 <div className={`${styles.container} ${styles.header__image}`}>
                     <div className={styles.text}>
-                        <h1 className={styles.title}>
-                            {data.text1} <span className={styles.organe}>{data.text2}</span> {data.text3}
+                        <h1 className={styles.title} style={color="white"}>
+                            {data.text1} <span className={styles.organe} size="6" color="white">{data.text2}</span> {data.text3}
                         </h1>
-                        <h2 className={styles.title}>
-                            {data.text4} <span className={styles.organe}>{data.text5}</span>
+                        <h2 className={styles.title} style={color="orange"}>
+                            {data.text4} <span className={styles.organe} size="6" color="white">{data.text5}</span>
                         </h2>
                         <h3 className={styles.title}>
-                            {data.text6} <span className={styles.organe}>{data.text7}</span>, {data.text8}
+                            {data.text6} <span className={styles.organe} size="6" color="white">{data.text7}</span>, {data.text8}
                         </h3>
                         <button className={styles.order} onClick={()=>setState(!state)}>
                             <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"

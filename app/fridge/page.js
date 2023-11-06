@@ -55,7 +55,7 @@ function Fridge() {
             "bonus": "+ скидка на ремонт",
             "button": "Рассчитать"
         },
-    ]
+    ];
 
     const header_data = [
         {
@@ -68,7 +68,7 @@ function Fridge() {
             "text7": "до 3500Р",
             "text8": "не переплачивая компаниям.",
         }
-    ]
+    ];
 
     useEffect(() => {
         (function (t, p) {
@@ -78,10 +78,10 @@ function Fridge() {
         })('Inline', {
             id: '64add4288eaa61002591a61d',
             buttonText: 'Пройти тест',
-            bgColor: '#efb900',
-            textColor: '#ffffff',
+            bgColor: '#ecb600',
+            textColor: '#00ff21',
             rounded: true,
-            shadow: 'rgba(239, 185, 0, 0.5)',
+            shadow: 'rgb(0,41,255)',
             blicked: true,
         });
     }, []);
