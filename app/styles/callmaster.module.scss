@@ -1,0 +1,77 @@
+@import "responsive.module";
+
+.callmaster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/derevyannaya-kuxnya-kak-iz-zhurnala.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 100px;
+
+  .callmaster__container {
+
+    .callmaster__box {
+      display: flex;
+      grid-gap: 50px;
+      flex-direction: column;
+      .callmaster__title {
+        justify-content: center;
+        display: flex;
+        color: purple;
+        font-size: 35px;
+      }
+
+      .callmaster__text {
+        font-size: 25px;
+        color: #fff;
+        padding-left: 40px;
+        padding-right: 40px;
+        @media (max-width: 768px) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .purple {
+          color: purple;
+        }
+        .organe {
+          color: rgba(255,130,9,1);
+        }
+      }
+      a {
+        justify-content: center;
+        display: flex;
+        .callmaster__order {
+          border: unset;
+          background-color: red;
+          color: #fff;
+          border-radius: 25px;
+          padding: 15px 25px;
+          min-width: 150px;
+          font-weight: bold;
+
+          align-items: center;
+          display: flex;
+          cursor: pointer;
+          font-size: 20px;
+          justify-content: center;
+          svg {
+            height: 50px;
+            margin-right: 10px;
+          }
+
+          span {
+            width: 100%;
+          }
+        }
+
+      }
+    }
+
+  }
+
+}

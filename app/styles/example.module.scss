@@ -1,0 +1,132 @@
+.example {
+  background-image: url("../images/derevyannaya-kuxnya-kak-iz-zhurnala.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .example__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .order {
+      justify-content: center;
+      margin-top: 70px;
+      border: unset;
+      background-color: red;
+      color: #fff;
+      border-radius: 25px;
+      padding: 0 20px;
+      min-width: 150px;
+      font-weight: bold;
+
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      font-size: 20px;
+      justify-content: center;
+      svg {
+        height: 50px;
+        margin-right: 10px;
+      }
+
+      span {
+        width: 100%;
+      }
+    }
+
+    .back {
+      font-size: 20px;
+      color: royalblue;
+      text-decoration: underline;
+      text-underline: royalblue;
+    }
+
+    .example__title {
+      color: purple;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      @media (max-width: 903px) {
+       margin-bottom: 30px;
+      }
+    }
+
+    .example__list {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 30px;
+
+      .example__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 903px) {
+          flex-direction: column;
+          grid-gap: 10px;
+        }
+
+        .example__img {
+          border-radius: 70px;
+          height: 300px;
+          min-width: 200px;
+          max-width: 200px;
+        }
+
+        .example__text {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          grid-gap: 10px;
+          flex-direction: column;
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 100%;
+          .text__title {
+            color: rgba(255,130,9,1);
+            font-size: 20px;
+          }
+
+          .text__desc {
+            color: #fff;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .example__list_row {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    .example__list_row2 {
+      flex-direction: row;
+      @media (max-width: 1136px) {
+        flex-direction: column;
+      }
+    }
+
+  }
+  .gridgap {
+    grid-gap: 20px;
+  }
+}
+.example2 {
+  background-image: url("../images/kitchen-1680x1050-016.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.example3 {
+  background-image: url("../images/derevyannaya-kuxnya-kak-iz-zhurnala.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+}

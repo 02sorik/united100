@@ -1,0 +1,79 @@
+@import "responsive.module";
+
+.repair {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/kuhnya-iz-berezy-2.jpg.1920x1080_q85.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  .repair__title {
+    font-size: 35px;
+    color: rgba(255,130,9,1);
+    margin-top: 20px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .repair__list {
+    display: flex;
+    grid-gap: 80px 30px;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      grid-gap: 20px;
+    }
+    .repair__item {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      flex-grow: 1;
+      flex-basis: 22%;
+      padding: 10px 20px;
+      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 20px;
+      text-align: center;
+      @media (max-width: 1200px) {
+        flex-basis: 33.33%;
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 50%;
+      }
+
+      @media (max-width: 480px) {
+        flex-basis: 100%;
+      }
+
+      .repair__text {
+        color: purple;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .repair__price {
+        color: rgba(255,130,9,1);
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .repair__bonus {
+        color: purple;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .repair__button {
+        background: red;
+        border: unset;
+        color: #fff;
+        padding: 15px 10px;
+        border-radius: 15px;
+        width: 100%;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "responsive.module";
+
+.header__block {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../images/derevyannaya-kuxnya-kak-iz-zhurnala.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .header__image {
+    display: flex;
+
+    justify-content: space-between;
+    @media (max-width: 888px) {
+      flex-direction: column;
+    }
+    .image {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      @media (max-width: 888px) {
+        margin-top: 20px;
+      }
+      .imagesrc {
+        max-width: 400px;
+        max-height: 400px;
+        @media (max-width: 428px) {
+          max-width: 300px;
+          max-height: 300px;
+        }
+      }
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 40px;
+    .title {
+      font-size: 30px;
+      .organe {
+        color: rgba(255,130,9,1);
+      }
+    }
+    .order {
+      border: unset;
+      background-color: red;
+      color: #fff;
+      border-radius: 15px;
+      padding: 8px 12px;
+      min-width: 150px;
+      font-weight: bold;
+      font-size: 14px;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      max-width: 250px;
+      margin: 0 auto;
+      svg {
+        height: 22px;
+        margin-right: 10px;
+      }
+
+      span {
+        width: 100%;
+      }
+    }
+  }
+}

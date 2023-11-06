@@ -1,0 +1,79 @@
+@import "responsive.module";
+
+.about {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  background-image: url("../images/kuhnya-iz-berezy-2.jpg.1920x1080_q85.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+
+  .about__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 581px) {
+      flex-direction: column;
+    }
+
+    .about__logo {
+      img {
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+      }
+      @media (max-width: 581px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .about__text {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 30px;
+      text-align: center;
+      align-items: center;
+
+
+
+      .order {
+        margin-top: 10px;
+        border: unset;
+        background-color: red;
+        color: #fff;
+        border-radius: 25px;
+        padding: 0 20px;
+        min-width: 150px;
+        font-weight: bold;
+
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        font-size: 20px;
+        justify-content: center;
+        svg {
+          height: 50px;
+          margin-right: 10px;
+        }
+
+        span {
+          width: 100%;
+        }
+      }
+      .back {
+        font-size: 20px;
+        color: royalblue;
+        text-decoration: underline;
+        text-underline: royalblue;
+      }
+    }
+
+  }
+
+}

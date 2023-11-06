@@ -1,0 +1,106 @@
+@import "responsive.module";
+
+.footer {
+  display: flex;
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(252,188,0,1) 0%, rgba(255,130,9,1) 100%);
+  width: 100%;
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 848px) {
+      flex-direction: column;
+    }
+    .footer__logo {
+      color: #000;
+      font-size: 40px;
+      font-weight: bold;
+      position: relative;
+      z-index: 2;
+      @media (max-width: 848px) {
+        margin-bottom: 20px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 70px;
+        background: purple;
+        border-radius: 30px;
+        left: -5px;
+        z-index: -1;
+        transform: rotateZ(-35deg);
+        top: -5px;
+      }
+    }
+    .footer__buttons {
+      display: flex;
+      flex-direction: column;
+      grid-gap: 20px;
+      .call {
+        display: flex;
+        border: unset;
+        background-color: purple;
+        color: #fff;
+        border-radius: 15px;
+        padding: 8px 12px;
+        font-weight: bold;
+        font-size: 14px;
+        align-items: center;
+        cursor: pointer;
+        width: 250px;
+        svg {
+          height: 22px;
+          padding-left: 20px;
+        }
+
+        span {
+          width: 100%;
+        }
+      }
+      .order {
+        border: unset;
+        background-color: red;
+        color: #fff;
+        border-radius: 15px;
+        padding: 8px 12px;
+        min-width: 150px;
+        font-weight: bold;
+        font-size: 14px;
+        align-items: center;
+        display: flex;
+        cursor: pointer;
+        width: 250px;
+        svg {
+          height: 22px;
+          padding-left: 20px;
+        }
+
+        span {
+          width: 100%;
+        }
+      }
+    }
+
+    .footer__contact {
+      @media (max-width: 848px) {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 5px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      .contact__text {
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }
+
+}
