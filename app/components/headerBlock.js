@@ -19,10 +19,10 @@ export const HeaderBlock = (props) => {
             }
                 <div className={`${styles.container} ${styles.header__image}`}>
                     <div className={styles.text}>
-                        <h1 className={styles.title} style={color="white"}>
+                        <h1 className={styles.title}>
                             {data.text1} <span className={styles.organe} size="6" color="white">{data.text2}</span> {data.text3}
                         </h1>
-                        <h2 className={styles.title} style={color="orange"}>
+                        <h2 className={styles.title}>
                             {data.text4} <span className={styles.organe} size="6" color="white">{data.text5}</span>
                         </h2>
                         <h3 className={styles.title}>
