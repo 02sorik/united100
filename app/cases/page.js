@@ -41,15 +41,28 @@ export default function Cases() {
                     <Image src={master}/>
                 </div>
                 <div className={styles.about__text}>
-                    <font size="10" color="white">
-                        <p>Меня зовут Василий</p>
+                    <font size="7" color="white">
+                        <p>Меня зовут Василий, Напарник - Игорь, Модульщик - Константин, Дистрибьютор - Алексей Новосибирск</p>
                     </font>
                     <p>
-                        <font size="10" color="white">
-                            Я - Квалифицированный Частный Мастер.
+                        <font size="7" color="white">
+                            МЫ - Квалифицированные Частные Мастера,<br>
+                            Ремонтируем все виды техники, какой бы она ни была.
                         </font>
                     </p>
-                    <span>Опыт более 7 лет</span>
+                    <p>
+                        <font size="6" color="#7fff00">
+                            Гарантия Почти на любой вид запчастей!
+                        </font>
+                    </p>
+                    <p>
+                        <font size="6" color="#ff4500">
+                            От 1-ого Месяца, До 2ЛЕТ!"
+                        </font>
+                    </p>
+                    <span>
+                        <font size="6" color="yellow">Опыт более 7 лет</font>
+                    </span>
                     <Link href={'#'}>
                         <button className={styles.order} onClick={() => setState(!state)}>
                             <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
@@ -112,5 +125,5 @@ export default function Cases() {
             <ExampleCases/>
         </div>
 
-    )
+)
 }
