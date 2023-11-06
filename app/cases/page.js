@@ -41,11 +41,11 @@ export default function Cases() {
                     <Image src={master}/>
                 </div>
                 <div className={styles.about__text}>
-                    <font size="6" color="white" face="serif">
+                    <font size="10" color="white">
                         <p>Меня зовут Василий</p>
                     </font>
                     <p>
-                        <font size="6" color="white" face="serif">
+                        <font size="10" color="white">
                             Я - Квалифицированный Частный Мастер.
                         </font>
                     </p>
