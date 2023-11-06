@@ -42,7 +42,7 @@ export default function Cases() {
                 </div>
                 <div className={styles.about__text}>
                     <p>
-                        <font size="6,6" color="white">
+                        <font size="6,8" color="white">
                             Меня зовут Василий, Напарник - Игорь,
                         </font>
                     </p>
@@ -58,7 +58,7 @@ export default function Cases() {
                         </font>
                     </p>
                     <p>
-                        <font size="5" color="#f0ffff">
+                        <font size="6" color="#f0ffff">
                             Модульщик - Константин, Дистрибьютор - Алексей Новосибирск, Владимир Красноярск
                         </font>
                     </p>
