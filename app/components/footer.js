@@ -83,8 +83,8 @@ export const Footer = () => {
                         </div>
                         <div className={styles.footer__contact}>
                             <p className={styles.contact__text}>Исполнитель:</p>
-                            <p className={styles.contact__text}>Самозанятый "РГАО НН"</p>
-                            <p className={styles.contact__text}>Инн: 701728504607</p>
+                            {/*<p className={styles.contact__text}>Самозанятый "РГАО НН"</p>*/}
+                            {/*<p className={styles.contact__text}>Инн: 701728504607</p>*/}
                         </div>
                     </div>
 

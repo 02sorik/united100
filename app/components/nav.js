@@ -25,9 +25,9 @@ export const Nav = () => {
                         </Link>
                         <Link href="/cases" onClick={()=>setState(!state)} passHref className={`${styles.nav__link} ${router  === '/cases' ? styles.nav__active : ''}`}>Примеры работ
                         </Link>
-                        <Link href="/fridge" onClick={()=>setState(!state)} passHref className={`${styles.nav__link} ${router  === '/fridge' ? styles.nav__active : ''}`}>Холодильники
+                        <Link href="/fridge" onClick={()=>setState(!state)} passHref className={`${styles.nav__link} ${router  === '/fridge' ? styles.nav__active : ''}`}><font size="6,8" color="white">Холодильники</font>
                         </Link>
-                        <Link href="/washing" onClick={()=>setState(!state)} passHref className={`${styles.nav__link} ${router  === '/washing' ? styles.nav__active : ''}`}>Стиральные машины</Link>
+                        <Link href="/washing" onClick={()=>setState(!state)} passHref className={`${styles.nav__link} ${router  === '/washing' ? styles.nav__active : ''}`}><font size="7">Стиральные машины</font></Link>
                     </nav>
                 )
             }
