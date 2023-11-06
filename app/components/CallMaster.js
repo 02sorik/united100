@@ -11,7 +11,20 @@ export const CallMaster = () => {
             {
                 state && (
                     <>
-                        <div style={{position: "fixed", top: "0", zIndex: "999", background: "#FF8209", cursor: "pointer", borderRadius: "20px", width: "100%", maxWidth: "500px", margin: "20px", padding: "10px", textAlign: "center"}} onClick={() => setState(!state)}>Закрыть</div>
+                        <div style={{
+                            position: "fixed",
+                            top: "0",
+                            zIndex: "999",
+                            background: "#FF8209",
+                            cursor: "pointer",
+                            borderRadius: "20px",
+                            width: "100%",
+                            maxWidth: "500px",
+                            margin: "20px",
+                            padding: "10px",
+                            textAlign: "center"
+                        }} onClick={() => setState(!state)}>Закрыть
+                        </div>
                         <Form/>
                     </>
                 )
@@ -25,14 +38,16 @@ export const CallMaster = () => {
                         </h2>
                         <p className={styles.callmaster__text}>
                             Вызвать мастера очень просто. Если вы предпочитаете живое
-                            общение, то позвоните по личному телефону <a href='tel:+79138483897' className={styles.purple}>+7 913 848 3897.</a>
+                            общение, то позвоните по личному телефону <a href='tel:+79138483897'
+                                                                         className={styles.purple}>+7 913 848 3897.</a>
                             Так же вы можете оставить свой номер на автоответчике и с
                             вами обязательно свяжутся. Можно заполнить форму "Вызвать
                             мастера и я обязательно перезвоню!"
                         </p>
                         <Link href={'#'}>
-                            <button className={styles.callmaster__order} onClick={()=>setState(!state)}>
-                                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                            <button className={styles.callmaster__order} onClick={() => setState(!state)}>
+                                <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                     xmlnsXlink="http://www.w3.org/1999/xlink"
                                      viewBox="0 0 496 496" xmlSpace="preserve">
                                     <g>
                                         <g>
@@ -81,9 +96,11 @@ export const CallMaster = () => {
                             </button>
                         </Link>
                         <p className={styles.callmaster__text}>
-                            Ваши данные никуда не попадут и распространяться не будут. В
-                            случае обращения в течении гарантийного срока *Подготовьте
-                            договор, оставленный мастером с Id ( обозначением номера )
+                            <font size="7" color="white">
+                                Ваши данные никуда не попадут и распространяться не будут!
+                            </font>
+                            В случае обращения в течении гарантийного срока *Подготовьте
+                            договор, оставленный мастером с ID ( обозначением номера )
                             заявки и датой. *проверьте, является ли оборудование
                             гарантийным или срок гарантии уже закончился; *посмотрите
                             марку аппарата <span className={styles.organe}>“Индезит, Атлант, Samsung, LG, LIEBHERR, SMEG” </span>
