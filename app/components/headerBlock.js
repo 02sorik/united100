@@ -17,7 +17,7 @@ export const HeaderBlock = (props) => {
                     </div>
                 )
             }
-                <div className={`${styles.container} ${styles.header__image}`}>
+                <div className={`${styles.container} ${styles.header__image}`} style={{color: 'white', padding: '32px'}}>
                     <div className={styles.text}>
                         <h1 className={styles.title} style={{color: 'white'}}>
                             {data.text1} <span className={styles.organe} size="6" color="white">{data.text2}</span> {data.text3}

@@ -37,8 +37,6 @@ export const Nav = () => {
                 <span className={styles.line}></span>
                 <span className={styles.line}></span>
             </button>
-
-
         </>
     );
 };
