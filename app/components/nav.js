@@ -14,9 +14,9 @@ export const Nav = () => {
                 </Link>
                 <Link href="/cases" passHref className={`${styles.nav__link} ${router  === '/cases' ? styles.nav__active : ''}`}>Примеры работ
                 </Link>
-                <Link href="/fridge" passHref className={`${styles.nav__link} ${router  === '/fridge' ? styles.nav__active : ''}`}>Холодильники
+                <Link href="/washing" passHref className={`${styles.nav__link} ${router  === '/washing' ? styles.nav__active : ''}`} style={{color: 'white', font: 7}}>Стиральные машины
                 </Link>
-                <Link href="/washing" passHref className={`${styles.nav__link} ${router  === '/washing' ? styles.nav__active : ''}`}>Стиральные машины</Link>
+                <Link href="/fridge" passHref className={`${styles.nav__link} ${router  === '/fridge' ? styles.nav__active : ''}`} style={{color: 'white'}}>Холодильники</Link>
             </nav>
             {
                 state && (
